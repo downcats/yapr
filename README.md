@@ -1,2 +1,2 @@
 # yapr
-yet another python roguelike
+## yet another python roguelike
