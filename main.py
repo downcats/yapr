@@ -25,7 +25,7 @@ def main() -> None:
     event_handler = EventHandler()
 
     player = Entity(int(screen_width / 2), int(screen_height / 2), "@", (255, 255, 255))
-    npc = Entity(int(screen_width / 2), int(screen_height / 2), "@", (255, 255, 0))
+    npc = Entity(int(screen_width / 2 - 5), int(screen_height / 2), "@", (255, 255, 0))
     entities = {npc, player}
 
     game_map = generate_dungeon(
@@ -43,7 +43,7 @@ def main() -> None:
         screen_width,
         screen_height,
         tileset=tileset,
-        title="Kill Shit",
+        title="Yet Another Roguelike Tutorial",
         vsync=True,
     ) as context:
         root_console = tcod.Console(screen_width, screen_height, order="F")
